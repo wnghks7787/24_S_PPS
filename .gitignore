@@ -1,1 +1,6 @@
 test
+
+solve.py
+*.zip
+
+.DS_Store
