@@ -4,3 +4,5 @@ solve.py
 *.zip
 
 .DS_Store
+
+/*.cpp
