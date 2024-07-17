@@ -11,23 +11,23 @@
  */
 class Solution {
 public:
-    vector<int> postorderTraversal(TreeNode* root) {
+    vector<int> inorderTraversal(TreeNode* root) {
         vector<int> answer;
 
         if(root == nullptr)
             return answer;
 
-        postorder(root, &answer);
+        inorder(root, &answer);
 
         return answer;
     }
 
-    void postorder(TreeNode* root, vector<int>* answer) {
+    void inorder(TreeNode* root, vector<int>* answer) {
         if(root == nullptr)
             return;
 
-        postorder(root->left, answer);
-        postorder(root->right, answer);
+        inorder(root->left, answer);
         (*answer).push_back(root->val);
+        inorder(root->right, answer);
     }
 };
