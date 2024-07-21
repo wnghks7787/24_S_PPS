@@ -25,4 +25,4 @@ public:
 
         return left_vowel == right_vowel ? true : false;
     }
-}; 
+};
